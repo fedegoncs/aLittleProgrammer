@@ -19,6 +19,7 @@ a {
   text-decoration: none;
 }
 
+
 .nav-main ul li {
   list-style: none;
 }
@@ -129,7 +130,7 @@ hr {
 .news-cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 25px;
+  grid-column-gap: 25px;
   margin: 20px 0;
 
 }
@@ -192,8 +193,64 @@ hr {
 
 .cards-banner-two p,
 .cards-banner-two h2{
-  margin: 10px 0 20px 0;
+  margin: 10px 0 20px 0; 
 }
+
+/*.notices*/
+.notices_tittle {
+  margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.5em;
+    line-height: 1.4;
+}
+.notices_tittle {
+    font-family: Dosis, arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: justify;
+     }
+
+.notices {
+  display: flex;
+  margin: 0 0;
+  padding: 0px;
+}
+.notices div {
+  padding-right: 12px;
+}
+.notices img {
+    width: 345px;
+    height: auto;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    border-bottom: 3px solid #5dd;
+    border-left: 3px solid #121212;
+    border-right: 3px solid #121212;
+
+}
+.notices h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.notices a {
+  padding: 10px 0;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  display: inline-block;
+   font-weight: bold;
+}
+
+.notices a:hover {
+  text-decoration: underline;
+  color: #90EECCFF;
+  opacity: 0.7;
+  transition: 2s;
+}
+
+
 
 .social {
   margin: 50px;
@@ -314,6 +371,14 @@ hr {
   .news-cards {
     grid-template-columns: repeat(2,1fr);
   }
+  
+.notices{
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 25px;
+  }
+  .notices img {
+    width: 100%;
+  }
 
  
   .cards-banner-one .content,
@@ -327,13 +392,11 @@ hr {
 
 @media (max-width: 500px) {
 
-  .news-cards {
+  .news-cards, .notices {
     display: flex;
     flex-direction: column;
     min-width: 50%;
-    
-  }
-
+    }
 
   .cards-news-one .content, .cards-news-two .content {
     width: 100%;
@@ -342,3 +405,30 @@ hr {
   .footer-links .footer-container {
     grid-template-columns: 1fr;
   }
+
+
+
+.social p {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.links a {
+  margin: 0 20px;
+
+}
+.links a i {
+  font-size: 3rem;
+}
+.links a i:hover {
+  color: #eeaaee;
+  opacity: .7;
+  transition: 1.8s;
+  text-shadow: 20px 10px #eefeee;
+}
