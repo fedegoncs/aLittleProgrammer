@@ -1,6 +1,6 @@
 console.log("hello world");
 document.querySelector('.menu-btn').addEventListener('click', () => {
-	document.querySelector('.nav-menu').classList.toggle('show');
+	document.querySelector('.nav-menu').classList.toggle('hide');
 });
 ScrollReveal().reveal('.showcase', {delay: 500});
 ScrollReveal().reveal('.news-cards', {delay: 750});
