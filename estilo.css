@@ -226,7 +226,7 @@ hr {
     height: auto;
     margin-bottom: 40px;
     margin-right: 40px;
-    border-bottom: 3px solid #5dd;
+    border-bottom: 3px solid #aaff7b;
     border-left: 3px solid #121212;
     border-right: 3px solid #121212;
 
@@ -235,22 +235,34 @@ hr {
   font-size: 20px;
   margin: 10px 0;
 }
-.notices a {
-  padding: 10px 0;
-  color: #f2f2f2;
+
+.notices .btn2 {
+  font-family: Dosis, arial, sans-serif;
   text-transform: uppercase;
+  letter-spacing: 0.15em;
+  text-align: justify;
+  padding: 5px 7px;
+  color: #363636;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
   display: inline-block;
-   font-weight: bold;
+  border: 0;
+  background: #aaff7c;
+  font-size: 13px;
+  border: 2px solid #fff;
+  margin: 10px 0;
 }
 
-.notices a:hover {
-  text-decoration: underline;
-  color: #90EECCFF;
-  opacity: 0.7;
+.notices .btn2:hover {
+  opacity: .7;
+  color: #000;
   transition: 2s;
+  background: #aafccc;
+
 }
 
-
+/*Social e links*/
 
 .social {
   margin: 50px;
