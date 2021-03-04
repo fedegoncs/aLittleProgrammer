@@ -16,5 +16,5 @@ if (nombre == "magali" || nombre == "magui" || nombre == "Magali" || nombre ==  
 }
 
 else if (nombre != "magali" || nombre != "magui" || nombre != "Magali" || nombre !=  "Magui" || nombre != "maga" || nombre != "Maga" || nombre != "magi" || nombre != "Magi")
-	alert("Hola " + (nombre) + ", esta pagina fue creada por el Momoide y Picaporte");
+	alert("¡Bienvenid@ " + (nombre) + "!" " , esta pagina fue creada por el Momoide y Picaporte");
 
