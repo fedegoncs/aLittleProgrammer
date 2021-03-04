@@ -11,8 +11,8 @@ ScrollReveal().reveal('.cards-banner-two', {delay: 1000});
 nombre = prompt("¿Cuál es tu nombre?");
 
 if (nombre == "magali" || nombre == "magui" || nombre == "Magali" || nombre ==  "Magui" || nombre == "maga" || nombre == "Maga" || nombre == "magi" || nombre == "Magi" || nombre =="tirri"){
-	alert("Bienvenida mi amor!! , te amo muchisimo " + (nombre));
-	alert("y sos lo más lindo de este mundo vos " + (nombre));
+	alert("¡Bienvenida mi amor! , te amo muchisimo " + (nombre));
+	alert("Y sos lo más lindo de este mundo vos " + (nombre));
 }
 
 else if (nombre != "magali" || nombre != "magui" || nombre != "Magali" || nombre !=  "Magui" || nombre != "maga" || nombre != "Maga" || nombre != "magi" || nombre != "Magi")
