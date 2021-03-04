@@ -363,6 +363,8 @@ hr {
     opacity: .9;
     border-bottom: 3px solid #3dd;
     border-right:2px solid #3dd;
+    order: 10;
+    z-index: 1;
   }
 
   .nav-main ul.nav-menu.show {
