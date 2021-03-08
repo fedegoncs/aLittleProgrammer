@@ -86,7 +86,214 @@ a {
   font-size: 1.5rem;
   display: none;
 }
+/*TRADEMARKS*/
+.btn-trade__marks {
+  border: 1px solid transparent;
+  cursor: default;
+}
+.btn-trade__marks i {
+margin-left: 20px;
+position: relative;
+bottom: 1px;
+}
+/*GRID*/
+.contenedor-grid {
+  position: relative;
+}
 
+.grid {
+  width: 100%;
+  display: none;
+  position: absolute;
+  top: 1px;
+  z-index: 1000;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "categorias subcategorias subcategorias subcategorias";
+}
+.grid.activo{
+  display: grid;
+}
+
+.grid::before {
+  content: "";
+  display: block;
+  background: transparent;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  position: absolute;
+  top: -5px;
+  left: 160px;
+}
+
+.grid > div {
+  background: #A1FFCEaa;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #FAFFD1aa, #A1FFCEa);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #FAFFD1aa, #A1FFCEaa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: 0px 3px 6px rgba(0,0,0,.10);
+  border-bottom: 3px solid #4dd7;
+  border-top: 3px solid #4dd6;
+}
+/* Categorias */
+/* ------------------------- */
+
+.grid .btn-regresar {
+  background: #232F3E;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  margin: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: none;
+}
+
+.grid .btn-regresar i {
+  margin-right: 10px;
+}
+
+.grid .categorias {
+  grid-area: categorias;
+  padding-top: 10px;
+  min-height: 300px;
+  overflow: auto;
+}
+
+.grid .categorias .subtitulo {
+  display: none;
+}
+
+.grid .categorias a {
+  color: #000;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.grid .categorias a i {
+  display: none;
+}
+
+.grid .categorias a:hover {
+  color: #7d4200;
+  font-weight: bold;
+}
+
+.grid .categorias a:hover i {
+  display: inline-block;
+}
+
+.grid .enlaces-subcategoria img {
+  display: block;
+  height: 100%;
+  opacity: .9;
+  padding-bottom: 95px;
+box-shadow: 0px 3px 6px rgba(0,0,0,.10);
+}
+.grid .enlaces-subcategoria .reading {
+  text-transform: unset;
+  letter-spacing: 0.30em;
+  justify-content: center;
+  padding: 15px 20px;
+  color: #363636;
+  font-weight: bold;
+  cursor: pointer;
+background: #30a683;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #30a683);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #30a683, #24243e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 13px;
+  border: 2px solid #bdffff;
+  margin: 30px 15px;
+  
+}
+
+.grid .enlaces-subcategoria .reading:hover {
+  opacity: .7;
+  color: #000;
+  border: 2px solid #222222;
+  transition: 2s;
+ background:  background: #262626;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e77, #302b63, #0f0c29cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+font-style: bold;
+  -webkit-transition: 2500ms ease;
+  -o-transition: 2500ms ease;
+  -transition: 3000ms ease;
+  text-transform: bold;
+}
+
+  
+.contenedor-subcategorias h3,  a {
+  color: #fff;
+}
+/*Subcategorias CSS*/
+.grid .contenedor-subcategorias {
+  grid-area: subcategorias;
+}
+
+.grid .subcategoria {
+  display: none;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  height: 100%;
+}
+
+.grid .subcategoria.activo {
+  display: grid;
+}
+
+.grid .subcategoria img {
+  width: 100%;
+  vertical-align: top;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid .enlaces-subcategoria {
+  /*padding-top: 10px; */
+  height: 100%;
+  max-height: 300px;
+}
+
+.grid .enlaces-subcategoria a {
+  color: #000;
+  display: block;
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
+.grid .enlaces-subcategoria a:hover {
+  color: #7d4200;
+}
+
+.grid .subtitulo {
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  color: #7d4200;
+  padding: 10px 30px;
+}
+
+.grid .banner-subcategoria a {
+  display: block;
+  height: 100%;
+  opacity: .9;
+}
+.grid .galeria-subcategoria {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: start;
+}
+.grid .galeria-subcategoria img {
+ width: 50%;
+ height: 50%;
+ opacity: .8;
+}
+/* SHOWCASE*/
 /* SHOWCASE*/
 hr {
   margin: 10px 0;
