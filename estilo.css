@@ -676,7 +676,7 @@ hr {
 .grid .contenedor-subcategorias.activo {
   transform: translateX(0);
   transition: .5s ease all;
-  overflow: auto;
+  overflow: hidden;
 }
 
  .grid .contenedor-subcategorias .subcategoria {
@@ -692,7 +692,6 @@ hr {
   display: block;
   height: 100%;
   opacity: .9;
-  padding-bottom: 140px;
 box-shadow: 0px 3px 6px rgba(0,0,0,.10);
 }
 .grid .contenedor-subcategorias .enlaces-subcategoria {
