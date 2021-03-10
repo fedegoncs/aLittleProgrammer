@@ -692,7 +692,6 @@ hr {
   display: absolute;
   height: 100%;
   opacity: .9;
-  padding-bottom: 70px;
 box-shadow: 0px 3px 6px rgba(0,0,0,.10);
 }
 .grid .contenedor-subcategorias .enlaces-subcategoria {
@@ -700,7 +699,7 @@ box-shadow: 0px 3px 6px rgba(0,0,0,.10);
 }
 .grid .contenedor-subcategorias .galeria-subcategoria img {
   width: 25%;
-  max-height: 700px;
+  height: 100%;
 }
 .grid > div {
   background: #071624;  /* fallback for old browsers */
