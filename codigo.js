@@ -47,7 +47,6 @@ document.querySelectorAll('#grid .categorias a').forEach((elemento) => {
 btnDepartamentos.addEventListener('click', (e) => {
 	e.preventDefault();
 	grid.classList.add('activo');
-	document.querySelector('body').style.overflow = 'hidden';
 });
 
 
@@ -61,7 +60,7 @@ ScrollReveal().reveal('.notices', {delay: 500});
 document.querySelector('#grid .categorias .btn-regresar').addEventListener('click', (e) =>{
 	e.preventDefault();
 	grid.classList.remove('activo');
-	document.querySelector('body').style.overflow = 'visible';
+	
 });
 
 //Click en boton de todos los departamentos (para mobile).
