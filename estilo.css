@@ -643,7 +643,7 @@ hr {
   position: fixed;
   top: 0;
   left: 0;
-  height: 95vh;
+  height: 100vh;
   grid-template-areas: "categorias categorias categorias categorias";
 }
 
@@ -653,7 +653,7 @@ hr {
 .nav-menu a i {
   display: none;
 }
-..grid .enlaces a {
+.grid .enlaces a {
   display: block;
   margin: 10px 0;
   padding: 10px;
@@ -669,14 +669,14 @@ hr {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 50%;
   transform: translateX(-100%);
   transition: .5s
 }
 .grid .contenedor-subcategorias.activo {
   transform: translateX(0);
   transition: .5s ease all;
-  overflow: hidden;
+  overflow: hidden; /*Ojo*/
 }
 
  .grid .contenedor-subcategorias .subcategoria {
@@ -684,18 +684,19 @@ hr {
  }
 .grid .contenedor-subcategorias .banner-subcategoria {
   width: 100%;
-  min-height: 171px;
-  max-height: 150px;
+  height: 50%;
+  opacity: 100%;
 }
 
 .grid .enlaces-subcategoria img {
   display: block;
   height: 100%;
   opacity: .9;
+  padding-bottom: 140px;
 box-shadow: 0px 3px 6px rgba(0,0,0,.10);
 }
 .grid .contenedor-subcategorias .enlaces-subcategoria {
-  min-height: 60vh;
+  min-height: 50vh;
 }
 .grid .contenedor-subcategorias .galeria-subcategoria img {
   width: 25%;
