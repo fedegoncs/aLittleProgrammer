@@ -687,7 +687,7 @@ hr {
   min-height: 171px;
   max-height: 150px;
   opacity: 1;
-  padding-bottom: 0px;
+  padding-bottom: -40px;
 }
 
 .grid .enlaces-subcategoria img {
