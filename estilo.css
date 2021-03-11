@@ -672,12 +672,12 @@ hr {
   height: 100%;
   transform: translateX(-100%);
   transition: .3 ease all;
-  overflow: auto /*ojo*/;
+  overflow: hidden /*ojo*/;
 }
 .grid .contenedor-subcategorias.activo {
   transform: translateX(0);
   transition: .5s ease all;
-  overflow: auto; /*/ojo/*/
+  overflow: hidden; /*/ojo/*/
 }
 
  .grid .contenedor-subcategorias .subcategoria {
@@ -698,7 +698,7 @@ box-shadow: 0px 3px 6px rgba(0,0,0,.10);
 }
 .grid .contenedor-subcategorias .enlaces-subcategoria {
   min-height: 70vh;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .grid .contenedor-subcategorias .banner-subcategoria {
