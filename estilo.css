@@ -684,10 +684,10 @@ hr {
  }
 .grid .contenedor-subcategorias .banner-subcategoria {
   width: 100%;
-  min-height: 171px;
-  max-height: 150px;
+  min-height: 250px;
+  max-height: 200px;
   opacity: 1;
-  padding-bottom: -140px;
+  padding-bottom: -10px;
 }
 
 .grid .enlaces-subcategoria img {
