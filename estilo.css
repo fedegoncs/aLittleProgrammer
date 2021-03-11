@@ -703,11 +703,12 @@ box-shadow: 0px 3px 6px rgba(0,0,0,.10);
 
 .grid .contenedor-subcategorias .banner-subcategoria {
   width: 100%;
-height: 100%
+  min-height: 250px;
+  max-height: 350px;
 }
 .grid .contenedor-subcategorias .galeria-subcategoria img {
   width: 25%;
-  height: 100%;
+  height: 1fr;
   opacity: 1;
 }
 .grid > div {
