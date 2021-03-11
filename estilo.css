@@ -685,14 +685,14 @@ hr {
 .grid .contenedor-subcategorias .banner-subcategoria {
   width: 100%;
   min-height: 200px;
-  max-height: 290px;
-  opacity: unset;
+  max-height: 2px;
+  opacity: 1;
   padding-bottom: -10px;
 }
 
 .grid .enlaces-subcategoria img {
   display: block;
-  height: 90%;
+  height: 80%;
   opacity: .9;
 box-shadow: 0px 3px 6px rgba(0,0,0,.10);
 }
@@ -700,12 +700,15 @@ box-shadow: 0px 3px 6px rgba(0,0,0,.10);
   min-height: 40vh;
 }
 .grid .contenedor-subcategorias .galeria-subcategoria {
-  min-height: 20vh;
+  max-height: 20vh;
+}
+.grid .contenedor-subcategorias .banner-subcategoria {
+  min-height: 40vh;
 }
 .grid .contenedor-subcategorias .galeria-subcategoria img {
   width: 25%;
   height: 100%;
-  opacity: unset;
+  opacity: 1;
 }
 .grid > div {
   background: #071624;  /* fallback for old browsers */
