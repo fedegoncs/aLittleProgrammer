@@ -671,12 +671,13 @@ hr {
   width: 100%;
   height: 100%;
   transform: translateX(-100%);
-  transition: .5s
+  transition: .3 ease all;
+  overflow: auto /*ojo*/;
 }
 .grid .contenedor-subcategorias.activo {
   transform: translateX(0);
   transition: .5s ease all;
-  overflow: auto;
+  overflow: auto; /*/ojo/*/
 }
 
  .grid .contenedor-subcategorias .subcategoria {
@@ -684,10 +685,9 @@ hr {
  }
 .grid .contenedor-subcategorias .banner-subcategoria {
   width: 100%;
-  min-height: 200px;
-  max-height: 2px;
+  min-height: 250px;
+  max-height: 350px;
   opacity: 1;
-  padding-bottom: -10px;
 }
 
 .grid .enlaces-subcategoria img {
@@ -697,13 +697,14 @@ hr {
 box-shadow: 0px 3px 6px rgba(0,0,0,.10);
 }
 .grid .contenedor-subcategorias .enlaces-subcategoria {
-  min-height: 20vh;
+  min-height: 50vh;
+  overflow: auto;
 }
-.grid .contenedor-subcategorias .galeria-subcategoria {
-  max-height: 20vh;
-}
+
 .grid .contenedor-subcategorias .banner-subcategoria {
-  min-height: 20vh;
+  width: 100%;
+  min-height: 250px;
+  max-height: 350px;
 }
 .grid .contenedor-subcategorias .galeria-subcategoria img {
   width: 25%;
