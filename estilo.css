@@ -696,6 +696,7 @@ hr {
 }
 .grid .contenedor-subcategorias .enlaces-subcategoria {
   min-height: 40vh;
+  display: block;
   overflow: hidden;
 }
 
